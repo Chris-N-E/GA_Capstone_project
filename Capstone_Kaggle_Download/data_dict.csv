@@ -1,0 +1,11 @@
+Heading,Description
+status,Current employment status (Employed / Left)
+department,Department employees belong(ed) to
+salary,Salary level relative to rest of their department
+tenure,Number of years at the company
+recently_promoted,Was the employee promoted in the last 3 years?
+n_projects,Number of projects employee is staffed on
+avg_monthly_hrs,Average number of hours worked per month
+satisfaction,Score for employee’s satisfaction with the company (higher is better)
+last_evaluation,Score for most recent evaluation of employee (higher is better)
+filed_complaint,Has the employee filed a formal complaint in the last 3 years?
