@@ -1,4 +1,4 @@
-# GA_Capstone_project
+![Logo](https://user-images.githubusercontent.com/69991618/111783988-c2483380-88b2-11eb-806b-6e2bbd495298.png) # GA_Capstone_project
 
 ![Logo](https://miro.medium.com/max/1400/1*oRKwlu787m3gjN-wDEKL_g.png)
 
