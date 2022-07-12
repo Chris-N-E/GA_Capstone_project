@@ -36,4 +36,5 @@ As the target variable is categorical, the machine learning task is **classifica
 - Seaborn
 - Matplotlib
 - Scikit-Learn
-
+- XGBoost
+- Statistics
