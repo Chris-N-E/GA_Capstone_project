@@ -1,8 +1,8 @@
 # GA_Capstone_project
-Predicting Employee Churn
+
 ![Logo](https://miro.medium.com/max/1400/1*oRKwlu787m3gjN-wDEKL_g.png)
 
-# Employee Churn
+# Predicting Employee Churn
 
 This project was completed as part of the General Assembly Data Science Immersive bootcamp. This document discusses the problem, hypothesis, methodology, conclusion, and tools used.
 
