@@ -2,7 +2,7 @@
 
 # Predicting Employee Churn
 
-This project was completed as part of the General Assembly Data Science Immersive bootcamp. This document discusses the problem, hypothesis, methodology, conclusion, and tools used.
+This project was undertaken as a solo project and completed as part of the General Assembly Data Science Immersive bootcamp over a 5 week period. This ReadMe discusses the problem, hypothesis, methodology, conclusion, and tools used.
 
 ## Problem Statement
 Employee turnover or churn is a costly problem for companies and is the rate at which an employer gains and losses employees. 
@@ -111,7 +111,12 @@ With the exception of Gaussian Naive Bayes and Logistic regression, all the mode
 There is a trade off between speed and accuracy when it comes to selecting the most suitable model and we will be going for accuracy.   
 
 Next step was to select the best two performing models **(Random Forest and XGBoost)** and tune the hyperparameters for each algorithm using GridSearchCV and extract feature importance to determine the best model at predicting the likelihood of an employee leaving.
-- XBGoost scored marginally better on the Recall and F1-scores of the minority class (aka leavers), and so was desirable as the objective is for the model to correctly classify the leavers.  
-- The best model was validated using receiver operating characteristic curve (ROC), confusion matrix and classification report.
-- The top 5 features ranked by importance were strong indicators for people leaving based on the additional features engineering during the data exploration stage
+- XGBoost was the winning model scored marginally better on the Recall and F1-scores of the minority class (aka leavers) and the same for all the other metrics, and so was desirable as the objective is for the model to correctly classify the leavers.  
+- The model was validated using receiver operating characteristic curve (ROC), confusion matrix and classification report.
+- The top 5 features ranked by importance were strong indicators for people leaving based on the additional features engineering during the data exploration stage.
+
+## Conclusions
+
 ![image7](Capstone_Modelling/XGBoost%20feature_importance.png)
+
+
