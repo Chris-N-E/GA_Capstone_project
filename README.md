@@ -76,14 +76,14 @@ Target variable 'status' – Current employment status (Employed / Left). The Em
 
 - Data cleaning entailed:
     - Converting the NaN's in the numerical features to 0 and creating an indicator variable for missing data before converting the NaNs to 0.
-    - Dropping duplicate rows
+    - Dropping duplicate rows.
     - Cleaning up the **department** feature by merging similar classes, creating new class for missing data and filtering out redundant classes.
-    - One-hot encoding of categorical features
-    - Converting target variable **status** to binary
+    - One-hot encoding of categorical features.
+    - Converting target variable **status** to binary.
 
 ## Feature Engineering
 
-After the initial exploration, I undertook univariate and bivariate segmentation of the features to find stronger relationships with the features and target:
+After the initial exploration, I undertook univariate and bivariate segmentation of the features to find stronger relationships between the features and target:
 
     1. satisfaction, filed_complaint — proxy for happiness/job satisfaction
     2. last_evaluation, recently_promoted — proxy for performance
