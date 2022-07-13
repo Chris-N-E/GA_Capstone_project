@@ -36,3 +36,30 @@ As the target variable is categorical, the machine learning task is **classifica
 - Scikit-Learn
 - XGBoost
 - Statistics
+
+## Dataset
+I used publicly available data on Kaggle and downloaded using a kaggle API. 
+
+The dataset has 14249 observations for past/present employees spanning a 10 year period.
+Each observation includes the employee’s current employment status.
+There are 10 features (columns):
+| Column Name  | Description |
+| ------------- | ------------- |
+| status  | Current employment status (Employed / Left)  |
+| 	department  | Department employees belong(ed) to  |
+| salary	  | Salary level relative to rest of their department  |
+| tenure  | Number of years at the company  |
+| recently_promoted  | Was the employee promoted in the last 3 years?  |
+|filed_complaint  | Has the employee filed a formal complaint in the last 3 years?  |
+| last_evaluation  | Score for most recent evaluation of employee (higher is better)  |
+| avg_monthly_hrs  | Average number of hours worked per month  |
+| n_projects  | Number of projects employee is staffed on  |
+
+Target variable 'status' – Current employment status (Employed / Left). The Employed observations made up 76% of the dataset , and as such the dataset contained some class imbalance.
+
+
+## Data Exploration and Processing
+
+- Distribution of Numerical Features:
+
+![image1](Capstone_Modelling/Histoplot%20of%20Numerical%20Features.png)
