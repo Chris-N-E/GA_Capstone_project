@@ -71,13 +71,9 @@ Target variable 'status' – Current employment status (Employed / Left). The Em
 
 - Exploration of Target Variable:
 
+<div style="width:60px ; height:60px">
 ![image3](Capstone_Modelling/salary_bar_chart.png)![image4](Capstone_Modelling/Working%20hours%20by%20Attrition.png)![image](Capstone_Modelling/Churn_bar_chart.png)
-
-
-
-
-
-
+<div>
 
 
 ![image6](Capstone_Modelling/Leavers%20correlation%20clustermap.png)
