@@ -77,7 +77,8 @@ Target variable 'status' – Current employment status (Employed / Left). The Em
 
 - Data cleaning entailed:
     - Converting the NaN's in the numerical features to 0 and creating an indicator variable for missing data before converting the NaNs to 0.
-    - Merging similar classes, creating new class for missing data and filtering out redundant calsses of the **department** feature.
-    - One-hot encoding **department** and **salary** features
+    - Dropping duplicate rows
+    - Cleaning up the **department** feature by merging similar classes, creating new class for missing data and filtering out redundant classes.
+    - One-hot encoding of categorical features
     - Converting target variable **status** to binary
 
