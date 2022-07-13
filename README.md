@@ -106,3 +106,12 @@ The accuracy score for each of the 7 models were:
 | XGBoost	  | 98  |
 
 ![image6](Capstone_Modelling/benchmark_models_time.png)
+
+With the exception of Gaussian Naive Bayes and Logistic regression, all the models had scores above the baseline.
+There is a trade off between speed and accuracy when it comes to selecting the most suitable model and we will be going for accuracy.   
+
+Next step was to select the best two performing models **(Random Forest and XGBoost)** and tune the hyperparameters for each algorithm using GridSearchCV and extract feature importance to determine the best model at predicting the likelihood of an employee leaving.
+- XBGoost scored marginally better on the Recall and F1-scores of the minority class (aka leavers), and so was desirable as the objective is for the model to correctly classify the leavers.  
+- The best model was validated using receiver operating characteristic curve (ROC), confusion matrix and classification report.
+- The top 5 features ranked by importance were strong indicators for people leaving based on the additional features engineering during the data exploration stage
+![image7](Capstone_Modelling/XGBoost_feature_importance.png)
