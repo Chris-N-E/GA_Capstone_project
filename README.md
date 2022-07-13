@@ -64,12 +64,11 @@ Target variable 'status' – Current employment status (Employed / Left). The Em
 
 ![image1](Capstone_Modelling/Histoplot%20of%20Numerical%20Features.png)
 
-
 - Exploration of Categorical Features:
 
 ![image2](Capstone_Modelling/Department.png)
 
-- Exploration of Target Variable:
+- Exploration of Target Feature:
 
 ![image3](Capstone_Modelling/Working%20hours%20by%20Attrition.png)![image4](Capstone_Modelling/Churn_bar_chart.png)
 
