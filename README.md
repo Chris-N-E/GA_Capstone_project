@@ -111,12 +111,33 @@ With the exception of Gaussian Naive Bayes and Logistic regression, all the mode
 There is a trade off between speed and accuracy when it comes to selecting the most suitable model and we will be going for accuracy.   
 
 Next step was to select the best two performing models **(Random Forest and XGBoost)** and tune the hyperparameters for each algorithm using GridSearchCV and extract feature importance to determine the best model at predicting the likelihood of an employee leaving.
-- XGBoost was the winning model scored marginally better on the Recall and F1-scores of the minority class (aka leavers) and the same for all the other metrics, and so was desirable as the objective is for the model to correctly classify the leavers.  
+- The accuracy scores for both models remained at 98% and both models had AUC scores of 0.991 or 99.1% indicating that both models are doing a very good job of seperating the *Left* from the *Employed*, even though our classes were not balanced.
+- XGBoost was the winning model scored marginally better on the Recall and F1-scores. 
 - The model was validated using receiver operating characteristic curve (ROC), confusion matrix and classification report.
-- The top 5 features ranked by importance were strong indicators for people leaving based on the additional features engineering during the data exploration stage.
-
-## Conclusions
 
 ![image7](Capstone_Modelling/XGBoost%20feature_importance.png)
 
+## Conclusions
 
+With an AUC score of 99% and an F1-score of 96%, the XGBoost model has 99% chance of correctly distinquishing between the *Left* or *Employed*.
+From a test set containing 2,814 employees, the model:
+- correctly classified 636 as Left *(true positives)* and incorrectly predicted 20 employees as Left *(false positive)*, and
+- correctly classified 2,121 as Employed *(true negatives)* and incorrectly predicted 37 employees as Employed *(false negatives)*
+
+Being able to accurately predict the probability of an employee will leave is benefical to a business as there are fanancial ramifications associated with an employee resigning as well as adverse impact on productivity and staff morale. With the model able to predict churn with a high level of accuracy, the business can take action to retain desirable employees.
+The top 5 features ranked by importance are strong indicators for employee churn and can be used to identify employees cluster groups (identified in the EDA section):
+
+- Overworked *(high job staisfaction/happiness and high workload:  avg_monthly_hrs > 210 and satisfation > 0.7)*
+- Workaholics *(high job satisfaction & high workload: avg_monthly_hrs > 225 and satisfaction < 0.2)*
+- Overachievers *( high job satisfaction & performance: last_evaluation > 0.8 and satisfaction > 0.7)*
+- Stars *(high workload & high performance: avg_monthly_hrs > 215 and last_evaluation > 0.75)*
+
+## Limitations
+- Additional features such as job title, salary, distance from work, gender, etc
+- Domain knowledge
+
+## Key Learning & Challenges
+This project allowed me to refine some visualisation skills, specifically comparing the model scorings as well as feature segmentations. I initially scraped indeed for salaries corresponding to the department classes but struggled with how to use the scraped salary information in a meaningful way and so abandoned that element of the project due to the project deadline but will continue to work on this in my own time to determine how the scraped salary could add value.  
+
+## Future Work
+- Apply Principal Component Analysis (PCA) to reduce the number of features and analyse the impact in the reduced features in terms of accuracy and computation time.
