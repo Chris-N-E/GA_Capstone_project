@@ -140,4 +140,4 @@ The top 5 features ranked by importance are strong indicators for employee churn
 This project allowed me to refine some visualisation skills, specifically comparing the model scorings as well as feature segmentations. I initially scraped indeed for salaries corresponding to the department classes but struggled with how to use the scraped salary information in a meaningful way and so abandoned that element of the project due to the project deadline but will continue to work on this in my own time to determine how the scraped salary could add value.  
 
 ## Future Work
-- Apply Principal Component Analysis (PCA) to reduce the number of features and analyse the impact in the reduced features in terms of accuracy and computation time.
+Apply Principal Component Analysis (PCA) to reduce the number of features and analyse the impact in the reduced features in terms of accuracy and computation time.
