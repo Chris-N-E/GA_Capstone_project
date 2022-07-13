@@ -81,3 +81,12 @@ Target variable 'status' – Current employment status (Employed / Left). The Em
     - One-hot encoding of categorical features
     - Converting target variable **status** to binary
 
+## Feature Engineering
+
+After the initial exploration, I undertook univariate and bivariate segmentation of the features to find stronger relationships with the features and target:
+
+    1. satisfaction, filed_complaint — proxy for happiness/job satisfaction
+    2. last_evaluation, recently_promoted — proxy for performance
+    3. avg_monthly_hrs, n_projects — proxy for workload
+    4. tenure — proxy for experience
+
